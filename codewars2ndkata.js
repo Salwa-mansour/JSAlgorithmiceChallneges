@@ -1,49 +1,16 @@
-
- let str='';
-    let k= 0;
-// function accum(s){
-//   console.log (s.length)
-//     for(let i=0;i<s.length;i++){
-//         do{
-//           str+=s[i]
-//            console.log(str)
-//         }
-//         while( k < i) 
-//         console.log(k)
-//             k++;
-        
-//     }
-// }
-// function accum(s){
-//   console.log (s.length)
-//     for(let i=0;i<s.length;i++){
-
-//     }
-// }
-// console.log(accum("ad"))
-// function star(s){
-//     for(let i= 0 ;i<s.length;i++){
-//         for (let k=0;k<i;k++){
-//             console.log(s[i])
-//             console.log(i)
-   
-//         }
-//             console.log('-')
-//     }
-// }
-// star('gh')
-// let str='';
 function tryangel(s){
+    let str='';
+    let k= 0;
         for(let i=0;i<s.length;i++){
             for(let k=0 ; k<=i;k++){
                 // console.log(k)
-                if(k==0){
-                   // str+=k
-                    str+=s.charAt(i).toUpperCase()
+                if(k !== 0){
+                //    str+=k
+                     str+=s.charAt(i).toLowerCase();
                 }else{
-                    //str+=k
-                     str+=s.charAt(i);}
-               
+                    str+=k
+                     str+=s.charAt(i).toUpperCase()
+                   }  
             }
             if(i!=s.length-1)
             str+='-';
@@ -51,5 +18,5 @@ function tryangel(s){
         str='"'+str +'"';
         return str;
 }
-console.log(tryangel('ZpglnRxqenU')
+console.log(tryangel('HbideVbxncC')
 )
