@@ -8,7 +8,7 @@ function tryangel(s){
                 //    str+=k
                      str+=s.charAt(i).toLowerCase();
                 }else{
-                    str+=k
+                    // str+=k
                      str+=s.charAt(i).toUpperCase()
                    }  
             }
