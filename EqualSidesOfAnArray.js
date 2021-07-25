@@ -28,22 +28,56 @@
 //     }
 //     return indexarr;
 // }
-function findEvenIndex(arr){
-    let leftSum=0;
-    let rightSum=0;
-  for(let i=0;i<arr.length;i++){
-      for(let k=i+1;k<arr.length;k++){
-          leftSum+=arr[k]
+// function findEvenIndex(arr){
+//     let leftSum=0;
+//     let rightSum=0;
+//   for(let i=0;i<arr.length;i++){
+//       for(let k=i+1;k<arr.length;k++){
+//           leftSum+=arr[k]
      
-      }
-            for(let y=(i-1);y>0;y--){
-            rightSum+=arr[y];
-      }
+//       }
+//             for(let y=(i-1);y>0;y--){
+//             rightSum+=arr[y];
+//       }
 
-      if(leftSum==rightSum){
-          return i;
-      }
+//       if(leftSum==rightSum){
+//           return i;
+//       }
      
-  }
+//   }
+// }
+// function findEvenIndex(arr){
+//     let Sum=arr.reduce((a, b) => a + b, 0);
+//     let rightSum=0;
+//     let leftSum=0;
+//   for(let i=0;i<arr.length;i++){
+//       //i need to loop this
+//      leftSum+=Sum+arr[i-1]
+//      rightSum+=Sum+[i+1]
+//     }
+// }
+function findEvenIndex(arr){
+    let i,k,y;
+    
+    let arrLength=arr.length-1;
+    for(i=0;i<=arrLength;i++){
+        let startSum=0;
+        let endSum=0;
+        for(k=0;k<i;k++){
+            startSum+=arr[k];
+            console.log('start sum',startSum)
+        }
+        for(y=arrLength;y>i;y--){
+            endSum+=arr[y]
+            console.log('end sum',endSum)
+        }
+        if(endSum==startSum){
+            return i;
+        }
+    }
+    return -1;
 }
-console.log(findEvenIndex([1,2,3,4,3,2,1]));
+//yes Kata solved !
+//can't submit the solution
+//https://github.com/Codewars/codewars.com/issues/1411
+console.log(findEvenIndex([1,100,50,-51,1,1]));
