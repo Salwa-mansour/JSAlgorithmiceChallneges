@@ -80,4 +80,8 @@ function findEvenIndex(arr){
 //yes Kata solved !
 //can't submit the solution
 //https://github.com/Codewars/codewars.com/issues/1411
-console.log(findEvenIndex([1,100,50,-51,1,1]));
+// https://gitter.im/Codewars/codewars.com/kata-solving-help?at=5e015cf6260751301cfcac88
+// console.log(findEvenIndex([1,100,50,-51,1,1]));
+let str = ['hello']
+str.pop()
+console.log(str)

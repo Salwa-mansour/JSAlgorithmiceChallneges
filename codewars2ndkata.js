@@ -18,5 +18,17 @@ function tryangel(s){
         str='"'+str +'"';
         return str;
 }
-console.log(tryangel('HbideVbxncC')
-)
+// console.log(tryangel('HbideVbxncC'))
+
+function fakeBin(x){
+  return  x.split('').map(x=> x<5 ? x=0:x=1).join('');
+    }
+
+    // console.log(fakeBin('6320990'));
+  function  findSmallestInt(args) {
+      smallest=  args.reduce((x,y)=>x<y?x:y)
+        return smallest;
+       
+        // .Number();
+   }
+   console.log(findSmallestInt([45,454,-4,4]));
