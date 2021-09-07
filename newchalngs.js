@@ -33,4 +33,9 @@ function well(x){
      })
  return goodOnes > 2 ? 'I smell a series!' : goodOnes > 0 ? 'Publish!' : 'Fail!';
 }
-console.log(well(['good', 'bad', 'bad', 'bad', 'bad']));
+// console.log(well(['good', 'bad', 'bad', 'bad', 'bad']));
+function isIsogram(str){
+  strArr = str.split('');
+  
+}
+console.log(isIsogram('abcda'));

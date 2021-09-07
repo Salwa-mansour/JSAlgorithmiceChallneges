@@ -31,4 +31,15 @@ function fakeBin(x){
        
         // .Number();
    }
-   console.log(findSmallestInt([45,454,-4,4]));
+  //  console.log(findSmallestInt([45,454,-4,4]));
+  function isIsogram(str){
+    //...
+  //   (...str).toLowerCase();
+  let empty=(str==/{\s}/g);
+    if(empty){
+      return 'empty string : '+ empty;
+    }else{
+      return 'is insogram : '+str.split('').reduce((x,y)=> x==y);
+    }
+  }
+  console.log(isIsogram('   '));
